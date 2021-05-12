@@ -13,6 +13,7 @@ header {
   border-bottom: 1px solid #00000015;
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 .header-wrapper {
@@ -150,4 +151,27 @@ body {
 
 .timestamp {
   font-size: 0.9rem;
+}
+
+.article {
+  grid-column: 2 / 3;
+}
+
+.article p {
+  padding: 1.1rem 0;
+}
+
+.article-singup {
+  border-top: 1px solid #00000015;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-singup-text {
+  width: 500px;
+}
+
+.article-singup-button {
+  height: 2rem;
 }
