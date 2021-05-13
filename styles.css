@@ -73,10 +73,10 @@ body {
 
 .body-wrapper {
   padding-top: 40px;
-  width: 50%;
+  width: 1200px;
   display: grid;
   margin: 0 auto;
-  grid-template-columns: 300px 600px 300px;
+  grid-template-columns: 250px 600px 250px;
   row-gap: 20px;
 }
 
@@ -127,7 +127,7 @@ body {
 }
 
 .hero-image {
-  width: 1200px;
+  width: 1100px;
   height: auto;
 }
 
@@ -185,17 +185,17 @@ body {
 .tiny-infos {
   display: grid;
   grid-template-columns: repeat (4, 1fr);
-  grid-template-rows: 105px 130px 100px 130px;
+  grid-template-rows: 160px 130px 160px 130px;
 }
 
 .tiny-infos {
   background-image: url("./images/inflation-945.png");
   height: auto;
-  width: 1200px;
+  width: 975px;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: 0% 0%;
-  background-size: contain;
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat (4, 1fr);
@@ -254,7 +254,47 @@ body {
   display: block;
   content: "";
   border-top: 1px solid #00000032;
-  margin-top: -30px;
   width: 4rem;
   transform: translateY(-1rem);
+}
+
+.article .description {
+  padding: 0;
+  margin-top: -20px;
+  font-size: 0.9rem;
+}
+
+.middle-image-container {
+  grid-column: 1 / -1;
+}
+
+.middle-image-container img {
+  width: 800px;
+  margin: 0 150px;
+}
+
+.side-links {
+  grid-column: span 1 / -1;
+  grid-row: 5 / span 1;
+  margin-left: 20px;
+  font-size: 0.7rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.side-links img {
+  width: 100px;
+}
+
+.side-links-title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #00000015;
+}
+
+.side-link-wrapper * {
+  display: flex;
+  margin: 10px 3px;
+  margin-left: 0;
+  align-items: center;
+  color: black;
 }
